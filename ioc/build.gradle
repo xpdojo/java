@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.xpdojo'
+version = '0.1.0'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.+'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.+'
+    testImplementation 'org.assertj:assertj-core:3.22.+'
+
+}
+
+test {
+    useJUnitPlatform()
+}
